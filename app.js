@@ -1,15 +1,16 @@
 const express = require('express')
 const app = express();
 const mongoose = require('mongoose')
+const bodyParser = require("body-parser");
 require('dotenv/config')
 
 
 // Import Routes 
-const postsRoute = require('./Routes/post')
+const postsRoute = require('./Routes/posts')
 
 // middleware 
-//
-app.use('/post', postsRoute);
+app.use(bodyParser.json())
+app.use('/posts', postsRoute);
 
 //routes
 app.get('/', (req, res )=>{
@@ -19,7 +20,6 @@ app.get('/', (req, res )=>{
 // Connecting to DB
 mongoose.connect(
   process.env.DB_CONNECTION,
-  // "mongodb+srv://admin_17:jG6Ff9DRZUrQkJUZ@cluster0.02x1i.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
   () => {
     console.log("Connected to db!");
   }

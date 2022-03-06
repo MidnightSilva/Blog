@@ -11,11 +11,12 @@ const PostSchema = mongoose.Schema({
   },
   category: {
     type: String,
-    required: true,
+    required: false,
   },
-  date: { type: Date, default: Date.now },
+  date: { type: Date,
+     default: Date.now },
 });
 
 
-
-module.export = mongoose.model ('Posts', PostSchema)
+module.exports = mongoose.model('Posts',PostSchema)
+// module.export = mongoose.model ('Posts', PostSchema)
