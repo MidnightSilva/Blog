@@ -15,15 +15,26 @@ const postsRoute = require('./Routes/posts')
 
 // middleware 
 app.use(bodyParser.json())
-app.use('/posts', postsRoute);
-app.use('/', openRoutes1);
 
 // app.use(cookieParser());
 
-//routes
-app.get('/', (req, res )=>{
-    res.send('we are home')
-})
+// ***********************************************//
+// open Routes
+// ***********************************************//
+app.get("/", (req, res) => {
+  res.send("we are home");
+});
+
+app.use("/posts", postsRoute);
+app.use("/", openRoutes1);
+// ***********************************************//
+// Create a Closed Routes 
+// ***********************************************//
+// need to move blog posting, editing to closed routes 
+// login and see if you can post / then log back out anf try to post again 
+
+
+
 
 // Connecting to DB
 mongoose.connect(

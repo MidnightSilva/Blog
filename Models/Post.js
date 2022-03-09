@@ -1,5 +1,7 @@
 const mongoose = require('mongoose')
-
+// ***********************************************//
+// adding categories to the schema 
+// ***********************************************//
 const PostSchema = mongoose.Schema({
   title: {
     type: String,
