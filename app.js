@@ -8,9 +8,17 @@ require('dotenv/config')
 // Import Routes 
 const postsRoute = require('./Routes/posts')
 
+    const openRoutes1 = require("./Routes/users")
+    const passport = require("./middleware/auth/index")
+    const path = require("path");
+
+
 // middleware 
 app.use(bodyParser.json())
 app.use('/posts', postsRoute);
+app.use('/', openRoutes1);
+
+// app.use(cookieParser());
 
 //routes
 app.get('/', (req, res )=>{
