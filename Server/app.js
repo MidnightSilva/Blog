@@ -6,9 +6,9 @@ require('dotenv/config')
 
 
 // Import Routes 
-const postsRoute = require('./Routes/posts')
+const postsRoute = require('./routes/posts')
 
-    const openRoutes1 = require("./Routes/users")
+    const openRoutes1 = require("./routes/users")
     const passport = require("./middleware/auth/index")
     const path = require("path");
 
