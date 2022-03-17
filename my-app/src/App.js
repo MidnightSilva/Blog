@@ -4,15 +4,20 @@ import CreatingBlogPost from './Pages/CreatingBlogPost'
 import DraftPost from './Pages/DraftPost'
 import Home from './Pages/Home'
 import Login from './Pages/Login'
+
+import { Routes, Route, } from "react-router-dom";
+
 function App() {
   return (
     <div className="App">
-     <BlogPost/>
-     <Categories/>
-     <CreatingBlogPost/>
-     <DraftPost/>
-     <Home/>
-     <Login/>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Categories" element={<Categories />} />
+        <Route path="/BlogPost" element={<BlogPost />} />
+        <Route path="/Login" element={<Login />} />
+        <Route path="/CreatingBlogPost" element={<CreatingBlogPost />} />
+        <Route path="/DraftPost" element={<DraftPost />} />
+      </Routes>
     </div>
   );
 }
