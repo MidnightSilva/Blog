@@ -4,12 +4,14 @@ import CreatingBlogPost from './Pages/CreatingBlogPost'
 import DraftPost from './Pages/DraftPost'
 import Home from './Pages/Home'
 import Login from './Pages/Login'
+import Navigation from './components/Navigation'
 
 import { Routes, Route, } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
+      <Navigation/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Categories" element={<Categories />} />
