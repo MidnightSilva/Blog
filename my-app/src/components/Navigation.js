@@ -6,26 +6,40 @@ import {  Link } from "react-router-dom";
     <nav>
       <ul>
         <il>
-          <Link to="/">home</Link>
-        </il>
-        <il>
-          <Link to="/Categories">categories</Link>
+          {" "}
+          <Link to="/" className="link">
+            home
+          </Link>
         </il>
         <il>
           {" "}
-          <Link to="/BlogPost">post</Link>
+          <Link to="/Categories" className="link">
+            categories
+          </Link>
         </il>
         <il>
           {" "}
-          <Link to="/Login">login</Link>
+          <Link to="/BlogPost" className="link">
+            post
+          </Link>
         </il>
         <il>
           {" "}
-          <Link to="/CreatingBlogPost">new post</Link>
+          <Link to="/Login" className="link">
+            login
+          </Link>
         </il>
         <il>
           {" "}
-          <Link to="/DraftPost">drafts</Link>
+          <Link to="/CreatingBlogPost" className="link">
+            new post
+          </Link>
+        </il>
+        <il>
+          {" "}
+          <Link to="/DraftPost" className="link">
+            drafts
+          </Link>
         </il>
       </ul>
     </nav>

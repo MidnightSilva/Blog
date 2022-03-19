@@ -1,0 +1,34 @@
+@import "./varibles.scss";
+body{
+  margin: 0;
+  padding: 0;
+  
+}
+    nav{
+        display: flex;
+        justify-content: flex-end;
+        text-transform: capitalize;
+    }
+    
+ul{ 
+    text-decoration: none;
+width: 30%;
+display: flex;
+justify-content: space-around;
+padding-right: 1rem};
+
+li a {
+    font-family: $nav_font;
+    font-size: $nav_font;
+    text-decoration: none;
+    color: rgba(8, 7, 10, 0.133)};
+
+    .link{
+          font-family: $nav_font;
+    font-size: $nav_font;
+    text-decoration: none;
+    color: rgba(15, 15, 15, 0.747)
+}; 
+    .link:hover{
+color: red;
+}

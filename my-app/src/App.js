@@ -6,6 +6,8 @@ import Home from './Pages/Home'
 import Login from './Pages/Login'
 import Navigation from './components/Navigation'
 
+import"./sass/nav.scss"
+
 import { Routes, Route, } from "react-router-dom";
 
 function App() {
