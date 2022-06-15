@@ -9,13 +9,13 @@ import RecentlyReleasedPost from '../components/RecentlyReleasedPost';
       <Banner />
       <DescriptiveText />
       <RecentlyReleasedPost />
-      <div className='blogCategoryContainer'>
-        <BlogCategoryTile />
-        <BlogCategoryTile />
-        <BlogCategoryTile />
-        <BlogCategoryTile />
-        <BlogCategoryTile />
-        <BlogCategoryTile />
+      <div className="category_section">
+        <h2 className="categoryTitle">Categories</h2>
+        <div className="blogCategoryContainer">
+          <BlogCategoryTile className="blog_category_title_place_holder" />
+          <BlogCategoryTile className="blog_category_title_place_holder" />
+          <BlogCategoryTile className="blog_category_title_place_holder" />
+        </div>
       </div>
     </div>
   );

@@ -1,0 +1,19 @@
+.loginPage{
+    height: 100vh;
+}
+
+.loginPage::after{
+       content: "";
+  background-color:rgba(127, 255, 212, 0.452);
+    height: 110%;
+    left: 0rem;
+    top: 0rem;
+    position: absolute;
+    width: 50%;
+    z-index: 0;
+}
+
+
+.loginContainer{
+    
+}
