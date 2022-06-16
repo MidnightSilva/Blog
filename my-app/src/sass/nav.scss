@@ -6,27 +6,28 @@ body{
 }
     nav{
         display: flex;
-        justify-content: flex-end;
+        justify-content: flex-start;
         text-transform: capitalize;
+        z-index: 5;
     }
     
 ul{ 
     text-decoration: none;
-width: 30%;
-display: flex;
+width: 79%;
+display: flex; z-index: 5;
 justify-content: space-around;
-padding-right: 1rem};
+padding-right: 1rem };
 
 li a {
     font-family: $nav_font;
     font-size: $nav_font;
-    text-decoration: none;
+    text-decoration: none; z-index: 5;
     color: rgba(8, 7, 10, 0.133)};
 
     .link{
           font-family: $nav_font;
     font-size: $nav_font;
-    text-decoration: none;
+    text-decoration: none; z-index: 5;
     color: rgba(15, 15, 15, 0.747)
 }; 
     .link:hover{

@@ -3,8 +3,10 @@ import React from 'react'
 
  const Login = () => {
   return (
-    <div>Login</div>
-  )
+    <div className="loginPage">
+      <div className="loginContainer"></div>
+    </div>
+  );
 }
 
 export default Login;

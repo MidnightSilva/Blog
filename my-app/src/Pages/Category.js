@@ -1,8 +1,13 @@
 import React from 'react'
+import CategorySection from '../components/Categorysection';
 
 const Category = () => {
   return (
-    <div>Category</div>
-  )
+    <>
+      <div className="category_page">
+        <CategorySection title="Understanding Self" />
+      </div>
+    </>
+  );
 }
 export default Category;

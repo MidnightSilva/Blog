@@ -1,0 +1,25 @@
+.RecentlyReleasedPost{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 92%;
+
+}
+.rrPost_text_container{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    margin-left: 3.7%;
+    align-items: end;
+}
+.image-placeholder{
+    background-color: aquamarine;
+    height: 7rem;
+    width: 9rem;
+    border-radius: 12px;
+}
+
+.image-text{
+    width: 13rem;
+    font-size: 12px;
+}
